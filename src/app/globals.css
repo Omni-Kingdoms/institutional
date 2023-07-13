@@ -26,9 +26,26 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.bg-1{
-  background-image: url("../assets/img/back1.png");
+.bg-3{
+  background-image: url("../assets/img/back3.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-width: 1024px) {
+  .lg{
+    max-width: 120rem/* 1280px */;
+  }
+}
+
+.bg-play-bottom{
+  background-image: url("../assets/img/top_dark\ 3\ \(1\).png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.text-ml{
+  margin-left: 39.5625rem
 }
