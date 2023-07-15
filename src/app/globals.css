@@ -26,21 +26,60 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.bg-3{
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+.bg-play-now{
+  background-image: url("../assets/img/back1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-play-top{
+  background-image: url("../assets/img/play-now-top.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-about{
+  background-image: url("../assets/img/about-background.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-button-plate{
+  background-image: url("../assets/img/button-plate.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.bg-parchment{
+  background-image: url("../assets/img/slide/parchment.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-how-play{
   background-image: url("../assets/img/back3.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-@media (min-width: 1024px) {
-  .lg{
-    max-width: 120rem/* 1280px */;
-  }
-}
-
 .bg-play-bottom{
-  background-image: url("../assets/img/top_dark\ 3\ \(1\).png");
+  background-image: url("../assets/img/play-now-bottom.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

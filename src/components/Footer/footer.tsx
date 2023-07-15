@@ -6,7 +6,7 @@ import logo from "@/assets/img/icon-nav.png";
 export default function Footer() {
   return (
     <footer className="justify-between px-10 py-5 p-4 text-neutral-content gap-4">
-      <div className="border-t-2 flex p-10 justify-between items-center w-full">
+      <div className="border-t-2 flex lg:p-10 justify-between items-center w-full">
         <Image
           src={logo}
           className="   hover:cursor-pointer "

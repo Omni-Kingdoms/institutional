@@ -1,0 +1,61 @@
+.swiper-slide{
+  width: 55%;
+}
+
+.swiper-button-next{
+  top: 80%;
+  right: 37%;
+
+  width: 50px;
+  height: 50px;
+
+  background-color: #643A28;
+  border: 1px solid #fff;
+  transform: skewY(-8deg);
+}
+
+.swiper-button-prev {
+  top: 80%;
+  left: 55%;
+
+  width: 50px;
+  height: 50px;
+  background-color: #643A28;
+  border: 1px solid #fff;
+
+  transform: skewY(-8deg);
+}
+
+.swiper-button-prev:after, .swiper-button-next:after{
+  font-size: 23px;
+  color: #fff
+}
+
+@media (max-width: 768px) {
+  .swiper{
+    min-height: 300px
+  }
+  .swiper-button-next {
+    top: auto;
+    bottom: 0;
+    right: 35%; 
+    left: auto;
+    width: 35px;
+    height: 35px;
+  }
+
+  .swiper-button-prev {
+    top: auto;
+    bottom: 0;
+    left: 35%; 
+    right: auto; 
+    width: 35px;
+    height: 35px;
+  }
+
+  .swiper-button-prev:after, .swiper-button-next:after{
+    font-size: 15px;
+  }
+}
+
+

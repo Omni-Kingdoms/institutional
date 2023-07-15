@@ -2,54 +2,82 @@
 
 import Image from "next/image";
 import logo from "@/assets/img/icon-nav.png";
+import logo320 from "@/assets/img/icon-320.png"
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth <= 767);
+    };
+
+    handleResize();
+
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [])
 
   return (
     <>
-      <nav className="flex w-full justify-between px-10 py-5 items-center font-extrabold">
+      <nav className="flex lg:w-full justify-between lg:px-10 py-5 items-center font-extrabold">
         <Link
           href="/"
           className="btn btn-ghost normal-case text-xl  hover:bg-gray-600 "
         >
-          <Image
-            src={logo}
-            className="   hover:cursor-pointer "
-            alt="chest"
-          />
+          {isSmallScreen ? (
+            <Image
+              src={logo320}
+              className="hover:cursor-pointer min-[320px]:max-w-none min-[320px]:m-2"
+              alt="chest"
+            />
+          ) : (
+            <Image
+              src={logo}
+              className="hover:cursor-pointer min-[320px]:max-w-none min-[320px]:m-2"
+              alt="chest"
+            />
+          )}
+          
         </Link>
         <div>
           <ul className="flex px-1 gap-4">
-            <li className="px-3 py-2 rounded hover:bg-gray-600 ">
-            <Link
-                href={
-                  "https://scroll-kingdoms-1.gitbook.io/game-play/game-play"
-                }
-                target="_blank"
-              >
-                Docs
-              </Link>
+            <li className="lg:px-3 py-2 rounded hover:bg-gray-600 ">
             </li>
-
           </ul>
         </div>
         <div>
-          <ul className="flex px-1 gap-4">
-            <li className="px-3 py-3 rounded hover:bg-gray-600">
-              <Link passHref href={"/home"}>
+          <ul className="flex px-1 sm:gap-40 items-center">
+            <li className="px-3 py-2 rounded text-white hover:bg-gray-600 ">
+              <Link
+                  href={
+                    "https://scroll-kingdoms-1.gitbook.io/game-play/game-play"
+                  }
+                  target="_blank"
+                >
+                  Docs
+                </Link>
+            </li>
+            <li className="lg:px-3 py-3 rounded hover:bg-gray-600">
+              <Link passHref href={
+                  "https://client-git-onchaininteg-scrollkingdoms.vercel.app"
+                  }
+                  target="_blank"
+                >
                 <button
                   className="w-64 px-3 py-2 rounded bg-white text-black"
                 >
                   Game Dashboard 
-                  {/* <FaArrowRight size={20} color="black"/> */}
                 </button>
               </Link>
             </li>
           </ul>
         </div>
       </nav>
-
     </>
   );
 }
