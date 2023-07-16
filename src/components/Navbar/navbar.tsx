@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import logo from "@/assets/img/icon-nav.png";
-import logo320 from "@/assets/img/icon-320.png"
+import logo320 from "@/assets/img/icon-320.png";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
@@ -16,11 +16,11 @@ export default function Navbar() {
 
     handleResize();
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
-  }, [])
+  }, []);
 
   return (
     <>
@@ -42,36 +42,37 @@ export default function Navbar() {
               alt="chest"
             />
           )}
-          
         </Link>
         <div>
           <ul className="flex px-1 gap-4">
-            <li className="lg:px-3 py-2 rounded hover:bg-gray-600 ">
-            </li>
+            <li className="lg:px-3 py-2 rounded hover:bg-gray-600 "></li>
           </ul>
         </div>
         <div>
           <ul className="flex px-1 sm:gap-40 items-center">
             <li className="px-3 py-2 rounded text-white hover:bg-gray-600 ">
               <Link
-                  href={
-                    "https://scroll-kingdoms-1.gitbook.io/game-play/game-play"
-                  }
-                  target="_blank"
-                >
-                  Docs
-                </Link>
+                href={
+                  "https://scroll-kingdoms-1.gitbook.io/game-play/game-play"
+                }
+                target="_blank"
+              >
+                Docs
+              </Link>
             </li>
-            <li className="lg:px-3 py-3 rounded hover:bg-gray-600">
-              <Link passHref href={
-                  "https://client-git-onchaininteg-scrollkingdoms.vercel.app"
-                  }
-                  target="_blank"
-                >
-                <button
-                  className="w-64 px-3 py-2 rounded bg-white text-black"
-                >
-                  Game Dashboard 
+            <li className="px-3 py-2 rounded text-white hover:bg-gray-600 ">
+              <Link href={"https://old.omnikingdoms.io/"} target="_blank">
+                Old Version
+              </Link>
+            </li>
+            <li className=" px-1 lg:px-1 py-3 rounded hover:bg-gray-600">
+              <Link
+                passHref
+                href={"https://app.omnikingdoms.io/play"}
+                target="_blank"
+              >
+                <button className="w-54 lg:w-64 px-1 py-2 rounded bg-white text-black">
+                  Game Dashboard
                 </button>
               </Link>
             </li>
