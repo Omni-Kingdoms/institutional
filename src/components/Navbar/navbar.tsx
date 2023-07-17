@@ -68,7 +68,7 @@ export default function Navbar() {
             <li className=" px-1 lg:px-1 py-3 rounded hover:bg-gray-600">
               <Link
                 passHref
-                href={"https://app.omnikingdoms.io/play"}
+                href={"https://app.omnikingdoms.io/"}
                 target="_blank"
               >
                 <button className="w-54 lg:w-64 px-1 py-2 rounded bg-white text-black">

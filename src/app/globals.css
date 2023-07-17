@@ -1,13 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -15,7 +13,6 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
 html {
   color-scheme: dark;
 }
@@ -28,7 +25,6 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -38,12 +34,20 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
-
 .bg-play-now {
   background-image: url("../assets/img/back1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+@media (min-width: 1222px) {
+  .bg-play-now {
+    background-image: url("../assets/img/back1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 }
 
 .bg-play-top {
@@ -52,42 +56,40 @@ body {
   background-position: center;
   background-size: cover;
 }
-
 .bg-about {
   background-image: url("../assets/img/about-background.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
 .bg-button-plate {
   background-image: url("../assets/img/button-plate.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
 }
-
 .bg-parchment {
   background-image: url("../assets/img/slide/parchment.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
 .bg-how-play {
   background-image: url("../assets/img/back3.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
 .bg-play-bottom {
   background-image: url("../assets/img/play-now-bottom.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-
 .text-ml {
   margin-left: 39.5625rem;
+}
+.text-mn {
+  font-size: 0.5rem;
+  line-height: 0.75rem;
 }
