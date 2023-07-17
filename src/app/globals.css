@@ -16,6 +16,9 @@
   }
 }
 
+html {
+  color-scheme: dark;
+}
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -36,55 +39,60 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.bg-play-now{
+.bg-play-now {
   background-image: url("../assets/img/back1.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.bg-play-top{
+.bg-play-top {
   background-image: url("../assets/img/play-now-top.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.bg-about{
+.bg-about {
   background-image: url("../assets/img/about-background.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.bg-button-plate{
+.bg-button-plate {
   background-image: url("../assets/img/button-plate.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
 }
 
-.bg-parchment{
+.bg-parchment {
   background-image: url("../assets/img/slide/parchment.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.bg-how-play{
+.bg-how-play {
   background-image: url("../assets/img/back3.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.bg-play-bottom{
+.bg-play-bottom {
   background-image: url("../assets/img/play-now-bottom.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 
-.text-ml{
-  margin-left: 39.5625rem
+.text-ml {
+  margin-left: 39.5625rem;
+}
+
+.text-mn {
+  font-size: 0.5rem;
+  line-height: 0.75rem;
 }

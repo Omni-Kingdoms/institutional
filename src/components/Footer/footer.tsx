@@ -12,7 +12,9 @@ export default function Footer() {
 
   useEffect(() => {
     const handleResize = () => {
-      setIsDarkScreen(window.matchMedia("(prefers-color-scheme: dark)").matches);
+      setIsDarkScreen(
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      );
     };
 
     handleResize();
@@ -27,11 +29,7 @@ export default function Footer() {
     <footer className="justify-between px-10 py-5 p-4 text-neutral-content gap-4">
       <div className="border-t-2 flex lg:p-10 justify-between items-center w-full">
         {isDarkScreen ? (
-          <Image
-            src={logo}
-            className="   hover:cursor-pointer "
-            alt="chest"
-          />
+          <Image src={logo} className="   hover:cursor-pointer " alt="chest" />
         ) : (
           <Image
             src={logoLight}
@@ -47,7 +45,11 @@ export default function Footer() {
             <>
               <Link href={"https://twitter.com/OmniKingdoms"} target={"_blank"}>
                 <FaTwitter size={30} color="white" />
-              </Link><Link href={"https://discord.com/invite/NX3qZuAFvG"} target={"_blank"}>
+              </Link>
+              <Link
+                href={"https://discord.com/invite/NX3qZuAFvG"}
+                target={"_blank"}
+              >
                 <FaDiscord size={30} color="white" />
               </Link>
             </>
@@ -55,14 +57,17 @@ export default function Footer() {
             <>
               <Link href={"https://twitter.com/OmniKingdoms"} target={"_blank"}>
                 <FaTwitter size={30} color="black" />
-              </Link><Link href={"https://discord.com/invite/NX3qZuAFvG"} target={"_blank"}>
+              </Link>
+              <Link
+                href={"https://discord.com/invite/NX3qZuAFvG"}
+                target={"_blank"}
+              >
                 <FaDiscord size={30} color="black" />
               </Link>
             </>
           )}
         </div>
       </div>
-      
     </footer>
   );
 }

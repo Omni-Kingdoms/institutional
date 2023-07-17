@@ -43,7 +43,8 @@ export default function About() {
             bg-button-plate 
             text-white 
             font-bold 
-            text-xs 
+            text-mn
+            min-[540px]:text-xs
             md:text-base
             lg:text-xl
             xl:text-2xl
