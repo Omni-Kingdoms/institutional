@@ -9,7 +9,15 @@ export default function Footer() {
   return (
     <footer className="justify-between px-10 py-5 p-4 text-neutral-content gap-4">
       <div className="border-t-2 flex lg:p-10 justify-between items-center w-full">
-        <Image src={logo} className="   hover:cursor-pointer " alt="chest" />
+        {isDarkScreen ? (
+          <Image src={logo} className="   hover:cursor-pointer " alt="chest" />
+        ) : (
+          <Image
+            src={logoLight}
+            className="   hover:cursor-pointer "
+            alt="chest"
+          />
+        )}
         <div className="items-center grid-flow-col">
           <p> OmniKingdoms Copyright © 2023 - All right reserved</p>
         </div>
