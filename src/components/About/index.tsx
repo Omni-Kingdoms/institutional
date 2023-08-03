@@ -11,23 +11,23 @@ export default function About() {
         <div className="flex flex-col max-w-[832px] gap-5 xl:gap-10">
           <h1
             className="
-          text-2xl 
-          font-bold 
+          text-2xl
+          font-bold
           border-l-2
-          border-brown-100 
-          text-brown-100 
+          border-brown-100
+          text-brown-100
           px-4"
           >
             About OmniKingdoms
           </h1>
-          <p className="text-xs xl:text-base">
-            {`   OmniKingdoms is the ultimate Layer2 multichain RPG game that will 
-              take you on an epic adventure through a mystical world filled with 
-              dangerous creatures, ancient relics, and treacherous dungeons. As 
-              you play, you'll level up your hero, gaining new skills, weapons, 
-              and spells to help you on your quest. But the journey won't be easy, 
-              as you'll face fierce opponents in the Arena, fighting for a place 
-              at the top of the leaderboard. So what are you waiting for? Dive 
+          <p className="text-xs xl:text-base text-brown-100">
+            {`   OmniKingdoms is the ultimate Layer2 multichain RPG game that will
+              take you on an epic adventure through a mystical world filled with
+              dangerous creatures, ancient relics, and treacherous dungeons. As
+              you play, you'll level up your hero, gaining new skills, weapons,
+              and spells to help you on your quest. But the journey won't be easy,
+              as you'll face fierce opponents in the Arena, fighting for a place
+              at the top of the leaderboard. So what are you waiting for? Dive
               into the world of OmniKingdoms today and become a legend!`}
           </p>
         </div>
@@ -38,11 +38,11 @@ export default function About() {
             className="
             w-slide-28
             max-w-[316px]
-            h-[133px] 
+            h-[133px]
 
-            bg-button-plate 
-            text-white 
-            font-bold 
+            bg-button-plate
+            text-white
+            font-bold
             text-mn
             min-[540px]:text-xs
             md:text-base
