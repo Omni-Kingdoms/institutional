@@ -9,11 +9,11 @@ import person5 from "@/assets/img/personas/person5.png";
 import person6 from "@/assets/img/personas/person6.png";
 
 export default function CardImage(){
- 
+
   return(
     <>
-      <div className="relative">
-        <div className="grid grid-cols-2 gap-4 w-2/3 m-auto">
+      <div className="relative card-image-container">
+        <div className="grid grid-cols-2 w-2/3 m-auto">
           <div>
             <Image
               src={person1}
@@ -31,7 +31,7 @@ export default function CardImage(){
             />
           </div>
         </div>
-        <div className="grid grid-cols-3 gap-4 -my-10 max-[620px]:-my-6 max-[1040px]:-my-10 max-[1400px]:-my-20">
+        <div className="grid grid-cols-2 w-2/3">
           <div>
             <Image
               src={person2}
@@ -49,7 +49,7 @@ export default function CardImage(){
             />
           </div>
         </div>
-        <div className="grid grid-cols-2 gap-4 w-2/3 m-auto">
+        <div className="grid grid-cols-2 w-2/3 m-auto">
           <div>
             <Image
               src={person5}
