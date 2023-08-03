@@ -15,8 +15,8 @@ export default function HowPlay() {
         <div className="lg:ml-96 sm:ml-10 py-10 sm:px-44 min-[320px]:ml-28">
           <h1
             className="
-          text-2xl 
-          font-bold 
+          text-2xl
+          font-bold
           border-l-2
           border-white
           text-white
@@ -31,12 +31,10 @@ export default function HowPlay() {
           <div className="flex flex-col max-w-[832px] gap-5 xl:gap-10">
             <dl className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
               <div className="pt-4">
-                <div className="flex">
+                <dt className="flex gap-2 font-semibold lg:text-3xl min-[320px]:text-2xl text-white">
                   <Image src={icon1} alt="Paladin" />
-                  <dt className="gap-2 font-semibold lg:text-3xl min-[320px]:text-2xl text-white">
-                    Choose your character
-                  </dt>
-                </div>
+                  Choose your character
+                </dt>
                 <dd className="mt-2 text-lg text-white">
                   OmniKingdoms awaits your heroism. Will you be a fierce
                   Warrior? Or perhaps a cunning Mage? Maybe a stealthy Rogue?
