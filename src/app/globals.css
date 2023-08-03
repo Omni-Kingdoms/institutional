@@ -60,7 +60,7 @@ body {
   background-image: url("../assets/img/about-background.svg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .bg-button-plate {
