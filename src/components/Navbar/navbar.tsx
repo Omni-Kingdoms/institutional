@@ -24,7 +24,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="flex lg:w-full justify-between lg:px-10 py-5 items-center font-extrabold">
+      <nav className="flex lg:w-full justify-between px-10 py-5 items-center font-extrabold">
         <Link
           href="/"
           className="btn btn-ghost normal-case text-xl  hover:bg-gray-600 "
@@ -49,7 +49,7 @@ export default function Navbar() {
           </ul>
         </div>
         <div>
-          <ul className="flex px-1 sm:gap-40 items-center">
+          <ul className="flex px-1 sm:gap-40 items-center max-[1200px]:sm:gap-20 max-[900px]:sm:gap-8">
             <li className="px-3 py-2 rounded text-white hover:bg-gray-600 ">
               <Link
                 href={
