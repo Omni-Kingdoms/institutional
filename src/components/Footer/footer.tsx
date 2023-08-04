@@ -4,17 +4,21 @@ import { FaDiscord, FaTwitter } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import logo from "@/assets/img/icon-nav.png";
+import logo320 from "@/assets/img/icon-320.png";
+import logoLight320 from "@/assets/img/icon-light-320.png";
 import logoLight from "@/assets/img/icon-nav-light.png";
 import { useEffect, useState } from "react";
 
 export default function Footer() {
   const [isDarkScreen, setIsDarkScreen] = useState(false);
+  const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
     const handleResize = () => {
       setIsDarkScreen(
         window.matchMedia("(prefers-color-scheme: dark)").matches
       );
+      setIsSmallScreen(window.innerWidth <= 767);
     };
 
     handleResize();
