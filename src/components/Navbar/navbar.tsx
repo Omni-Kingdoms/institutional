@@ -52,19 +52,13 @@ export default function Navbar() {
           <ul className="flex px-1 sm:gap-40 items-center max-[1200px]:sm:gap-20 max-[900px]:sm:gap-8">
             <li className="px-3 py-2 rounded text-white hover:bg-gray-600 ">
               <Link
-                href={
-                  "https://scroll-kingdoms-1.gitbook.io/game-play/game-play"
-                }
+                href={"https://docs.omnikingdoms.io/howtoplay/mint"}
                 target="_blank"
               >
                 Docs
               </Link>
             </li>
-            <li className="px-3 py-2 rounded text-white hover:bg-gray-600 ">
-              <Link href={"https://old.omnikingdoms.io/"} target="_blank">
-                Old Version
-              </Link>
-            </li>
+
             <li className=" px-1 lg:px-1 py-3 rounded hover:bg-gray-600">
               <Link
                 passHref
