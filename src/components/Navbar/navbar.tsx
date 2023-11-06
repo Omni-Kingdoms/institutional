@@ -49,7 +49,20 @@ export default function Navbar() {
           </ul>
         </div>
         <div>
-          <ul className="flex px-1 sm:gap-40 items-center max-[1200px]:sm:gap-20 max-[900px]:sm:gap-8">
+          <ul className="flex px-1 gap-4 items-center flex-wrap">
+            <li className="px-3 py-2 rounded text-white hover:bg-gray-600 ">
+              <Link href={"https://twitter.com/OmniKingdoms"} target="_blank">
+                Twitter
+              </Link>
+            </li>
+            <li className="px-3 py-2 rounded text-white hover:bg-gray-600 ">
+              <Link
+                href={"https://discord.com/invite/PzRnWxa8ks"}
+                target="_blank"
+              >
+                Discord
+              </Link>
+            </li>
             <li className="px-3 py-2 rounded text-white hover:bg-gray-600 ">
               <Link
                 href={"https://docs.omnikingdoms.io/howtoplay/mint"}
@@ -58,15 +71,32 @@ export default function Navbar() {
                 Docs
               </Link>
             </li>
+            <li className="px-3 py-2 rounded text-white hover:bg-gray-600 ">
+              <Link href={"https://medium.com/@OmniKingdoms"} target="_blank">
+                Medium
+              </Link>
+            </li>
+            <li className="px-1 lg:px-1 py-1 rounded hover:bg-gray-600 ">
+              <Link
+                href={
+                  "https://www.geckoterminal.com/scroll/pools/0x63e3c9c06120af5dca2788ecbb30b923e52d0180"
+                }
+                target="_blank"
+              >
+                <button className="px-3 py-1 rounded bg-white text-black">
+                  Token
+                </button>
+              </Link>
+            </li>
 
-            <li className=" px-1 lg:px-1 py-3 rounded hover:bg-gray-600">
+            <li className=" px-1 lg:px-1 py-1 rounded hover:bg-gray-600">
               <Link
                 passHref
                 href={"https://app.omnikingdoms.io/"}
                 target="_blank"
               >
-                <button className="w-54 lg:w-64 px-1 py-2 rounded bg-white text-black">
-                  Game Dashboard
+                <button className="w-54 lg:w-64 px-1 py-1 rounded bg-white text-black">
+                  PLAY
                 </button>
               </Link>
             </li>
